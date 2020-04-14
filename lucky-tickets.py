@@ -35,14 +35,15 @@ def luckyTickets_inline():
     # в строку с длиной 6
     return len([t for t in range (1000, 1000000) if sum(map(int, str(t // 1000))) == sum(map(int, str(t % 1000)))]) + 1
 
+'''
 def timer(fn):
     st = datetime.datetime.now()
     result = fn()
     time = datetime.datetime.now() - st
     print(f"Билетов: {result} Секунд: {time}")
+'''
 
 if __name__ == "__main__":
-    timer(luckyTickets_first)
-    timer(luckyTickets_inline)
-    
+    print(luckyTickets_first())
+    print(luckyTickets_inline()) 
     print(luckyTickets_universal()) # с любой четной длиной
