@@ -21,7 +21,7 @@ def luckyTickets_first():
 
 def luckyTickets_universal():
     # для билетов произвольной четной длинны
-    count_lucky_tickets, lenth = 1, 1
+    lenth = 1
     while lenth % 2 != 0 and lenth != 0:
         print("Введите длину билетов(четное число): ", end="")
         lenth = int(input())
